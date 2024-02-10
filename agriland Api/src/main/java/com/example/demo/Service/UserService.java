@@ -21,7 +21,6 @@ public class UserService {
 
     @Autowired
     private UserRepository userRepository;
-
     public User saveDetails(User user){
         return userRepository.save(user);
     }
@@ -38,7 +37,7 @@ public class UserService {
         return  userRepository.findByEmail(email);
     }
 
-    public User updateImage(Long userId, String newImageName) {
+    public User updateUserImage(Long userId, String newImageName) {
         Optional<User> userOptional = userRepository.findById(Math.toIntExact(userId));
 
         if (userOptional.isPresent()) {

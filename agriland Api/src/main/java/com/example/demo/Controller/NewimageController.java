@@ -41,7 +41,6 @@ public class NewimageController {
             Map<String, Object> imageMap = new HashMap<>();
             imageMap.put("id", image.getId());
             imageMap.put("imageName", image.getImageName());
-
             imageMap.put("imagePath", "/images/" + image.getImageName());
 
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

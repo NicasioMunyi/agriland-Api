@@ -21,7 +21,6 @@ import java.util.stream.Collectors;
 
 @Service
 public class NewimageService {
-
     @Autowired
     private ModelMapper modelMapper;
 
@@ -92,7 +91,7 @@ public class NewimageService {
         return images.stream()
                 .map(image -> modelMapper.map(image, NewImageDTO.class))
                 .collect(Collectors.toList());
+
     }
 
-    // Additional methods for image operations can be added here, like updating, retrieving, or deleting images.
-}
+    }

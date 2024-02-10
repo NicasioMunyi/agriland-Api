@@ -29,5 +29,4 @@ public class Comment {
     @Column(nullable = false)
     private String content;
 
-    // Other fields, getters, setters...
 }

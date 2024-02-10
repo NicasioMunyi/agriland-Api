@@ -1,5 +1,11 @@
 package com.example.demo.Entity;
 
+import lombok.Data;
+
+
+
+@Data
+
 public class CommentRequest {
 
     private String content;

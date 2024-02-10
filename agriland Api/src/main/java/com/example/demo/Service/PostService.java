@@ -27,7 +27,6 @@ public class PostService {
 
     @Autowired
     private PostRepo postRepo;
-    // You'll need to create PostRepository for database operations
     @Autowired
     private PostImageRepo postImageRepo;
 
