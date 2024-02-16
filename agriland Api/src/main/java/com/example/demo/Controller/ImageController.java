@@ -29,8 +29,6 @@ public class ImageController {
         if (resource.exists() && resource.isReadable()) {
             // Determine the content type based on the file extension
             String contentType = determineContentType(imageName);
-
-            // Build the response headers
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.parseMediaType(contentType));
 
